@@ -6,13 +6,75 @@
     font-weight: #{$weight}
     font-style: #{$style}
 
-
-  
 @import "fonts"
 
-
 body
-  font-family: 'sans-serif'
-  font-size: 12px
-  font-style: italic
+  padding: 0
+  margin: 0
+  box-sizing: border-box
+
+.main
+  padding-top: 37px
+  background-image: url(../img/main.jpg) no-repeat
+  &__logo
+    display: flex
+    align-items: center
+    margin-bottom: 16px
+  &__meaning
+    font-family: GothamPro-Medium
+    font-style: normal
+    font-weight: bold
+    font-size: 20px
+    line-height: 22px
+    text-transform: uppercase
+    color: rgba(0, 0, 0, 0.95)
+    margin-bottom: 31px
+  &__header
+    font-family: GothamPro-Black
+    font-style: normal
+    font-weight: bold
+    font-size: 48px
+    line-height: 72px
+    text-transform: uppercase
+    color: #132A82
+
+.container
+  width: 85%
+  margin: auto
+
+.logo__image
+  margin-right: 19px
+
+.logo__name
+  font-family: GothamPro-Bold
+  font-style: normal
   font-weight: bold
+  font-size: 41px
+  line-height: 40px
+  text-transform: uppercase
+  color: #3AA48C
+
+.advantages__item
+  width: 384px
+  height: 72px
+  margin-bottom: 16px
+  background: #FFFFFF
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+  border-radius: 4px
+  display: flex
+  align-items: center
+
+.advantages__img
+  padding-left: 25px
+  padding-right: 6px
+
+.advantages__title
+  font-family: GothamPro-Medium
+  font-style: normal
+  font-weight: normal
+  font-size: 20px
+  line-height: 22px
+  color: rgba(0, 0, 0, 0.95)
+
+.red
+  color: #E85252

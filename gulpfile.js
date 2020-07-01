@@ -15,14 +15,14 @@ let path = {           // УКАЗЫВАЕМ ПУТИ ПРОДАКШН, ИСХО
     html: source_folder + "/*.pug",
     css: source_folder + "/sass/style.sass",
     js: source_folder + "/js/script.js",
-    img: source_folder + "/img/**/*.{jpg, png, svg, gif, ico, webp}",
+    img: source_folder + "/img/**/*.+(png|jpg|gif|ico|svg|webp)",
     fonts: source_folder + "/fonts/*.ttf",
   },
   watch: {
-    html: source_folder + "/**/*.html",
+    html: source_folder + "/index.pug",
     css: source_folder + "/sass/**/*.sass",
     js: source_folder + "/js/**/*.js",
-    img: source_folder + "/img/**/*.{jpg, png, svg, gif, ico, webp}",
+    img: source_folder + "/img/**/*.+(png|jpg|gif|ico|svg|webp)",
   },
   clean: "./" + project_folder + "/"
 };
@@ -178,7 +178,7 @@ gulp.task('svgSprite', function () {
   .pipe(dest(path.build.img))
 });
 
-function fontsStyle() {
+async function fontsStyle() {
   let file_content = fs.readFileSync(source_folder + '/sass/fonts.sass');
   if (file_content == '') {
     fs.writeFile(source_folder + '/sass/fonts.sass', '', cb);

@@ -1,0 +1,21 @@
+extends layouts/base
+
+block content
+  main.main
+    .container
+      .main__logo
+        img.logo__image(src="img/logo.png", alt="logo")
+        span.logo__name дезинтекс
+      p.main__meaning дезинфицирующий концентрат
+      h1.main__header Защитите свой дом от микробов и вирусов
+      img.main__bottles(src="img/bottles.jpg", alt="bottles")
+      .main__advantages
+        .advantages__item
+          img.advantages__img(src="img/advantage.svg", alt="advantage")
+          p.advantages__title Уничтожает до <span class="red">100%</span> опасных микроорганизмов
+        .advantages__item
+          img.advantages__img(src="img/advantage.svg", alt="advantage")
+          p.advantages__title Защищает поверхность <br> до <span class="red">48 часов</span> 
+        .advantages__item
+          img.advantages__img(src="img/advantage.svg", alt="advantage")
+          p.advantages__title <span class="red">Абсолютно безопасен</span> <br> для человека и животных
