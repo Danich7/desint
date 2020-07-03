@@ -12,6 +12,8 @@ body
   padding: 0
   margin: 0
   box-sizing: border-box
+h1, h3
+  margin: 0
 
 .main
   padding-top: 37px
@@ -29,7 +31,7 @@ body
     text-transform: uppercase
     color: rgba(0, 0, 0, 0.95)
     margin-bottom: 31px
-  &__header
+  &__title
     font-family: GothamPro-Black
     font-style: normal
     font-weight: bold
@@ -37,6 +39,11 @@ body
     line-height: 72px
     text-transform: uppercase
     color: #132A82
+  &__advantages
+    display: flex
+  &__bottles
+    margin-right: 58px
+    padding-bottom: 42px
 
 .container
   width: 85%
@@ -54,6 +61,10 @@ body
   text-transform: uppercase
   color: #3AA48C
 
+.advantages__list
+  display: block
+  padding-top: 21px
+
 .advantages__item
   width: 384px
   height: 72px
@@ -65,8 +76,7 @@ body
   align-items: center
 
 .advantages__img
-  padding-left: 25px
-  padding-right: 6px
+  padding: 12px 7px 12px 25px
 
 .advantages__title
   font-family: GothamPro-Medium
@@ -75,6 +85,114 @@ body
   font-size: 20px
   line-height: 22px
   color: rgba(0, 0, 0, 0.95)
-
 .red
   color: #E85252
+
+.main__form
+  display: flex
+  flex-direction: column
+  align-items: center
+
+.form__title
+  font-family: GothamPro-Bold
+  font-style: normal
+  font-weight: bold
+  font-size: 26px
+  line-height: 25px
+  text-align: center
+  color: rgba(0, 0, 0, 0.95)
+  padding: 30px 28px 18px 37px
+
+.form__content
+  display: block
+
+.form__content-title
+  font-family: GothamPro-Bold
+  font-style: normal
+  font-weight: bold
+  font-size: 26px
+  line-height: 25px
+  text-align: center
+  color: rgba(0, 0, 0, 0.95)
+  margin-bottom: 15px
+
+.cost-red
+  display: block
+  font-family: GothamPro-Bold
+  font-style: normal
+  font-weight: bold
+  font-size: 48px
+  line-height: 46px
+  text-align: center
+  color: #E85252
+  margin-bottom: 17px
+
+.line-through
+  display: block
+  font-family: GothamPro
+  font-style: normal
+  font-weight: normal
+  font-size: 30px
+  line-height: 29px
+  text-align: center
+  text-decoration: line-through
+  color: rgba(0, 0, 0, 0.95)
+  margin-bottom: 17px
+
+.content-info__country
+  width: 300px
+  border: 1px solid #DEDEDE
+  box-sizing: border-box
+  font-family: GothamPro
+  font-style: normal
+  font-weight: normal
+  font-size: 18px
+  line-height: 17px
+  color: #000000
+  padding: 14px 0px 17px 15px
+  margin-bottom: 7px
+
+.content-info__name
+  width: 300px
+  border: 1px solid #DEDEDE
+  box-sizing: border-box
+  font-family: GothamPro
+  font-style: normal
+  font-weight: normal
+  font-size: 18px
+  line-height: 17px
+  display: flex
+  align-items: center
+  padding: 14px 0px 17px 15px
+  margin-bottom: 7px
+  &::placeholder
+    color: #000000
+.content-info__phone
+  width: 300px
+  border: 1px solid #DEDEDE
+  box-sizing: border-box
+  font-family: GothamPro
+  font-style: normal
+  font-weight: normal
+  font-size: 18px
+  line-height: 17px
+  display: flex
+  align-items: center
+  padding: 14px 0px 17px 15px
+  margin-bottom: 16px
+  &::placeholder
+    color: #000000
+.form__btn
+  background: #E85252
+  border-radius: 30px
+  font-family: GothamPro-Bold
+  font-style: normal
+  font-weight: bold
+  font-size: 20px
+  line-height: 19px
+  display: flex
+  align-items: center
+  text-align: center
+  color: #FFFFFF
+  border: none
+  padding: 19px 100px
