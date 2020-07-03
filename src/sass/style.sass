@@ -89,9 +89,12 @@ h1, h3
   color: #E85252
 
 .main__form
+  width: 370px
   display: flex
   flex-direction: column
   align-items: center
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+  border-radius: 4px
 
 .form__title
   font-family: GothamPro-Bold
@@ -105,16 +108,15 @@ h1, h3
 
 .form__content
   display: block
-
-.form__content-title
-  font-family: GothamPro-Bold
-  font-style: normal
-  font-weight: bold
-  font-size: 26px
-  line-height: 25px
-  text-align: center
-  color: rgba(0, 0, 0, 0.95)
-  margin-bottom: 15px
+  &-title
+    font-family: GothamPro-Bold
+    font-style: normal
+    font-weight: bold
+    font-size: 26px
+    line-height: 25px
+    text-align: center
+    color: rgba(0, 0, 0, 0.95)
+    margin-bottom: 15px
 
 .cost-red
   display: block
@@ -151,6 +153,10 @@ h1, h3
   color: #000000
   padding: 14px 0px 17px 15px
   margin-bottom: 7px
+  appearance: none
+  background-image: url(../img/Vector.svg)
+  background-repeat: no-repeat
+  background-position: 93% 50%
 
 .content-info__name
   width: 300px
@@ -196,3 +202,5 @@ h1, h3
   color: #FFFFFF
   border: none
   padding: 19px 100px
+  cursor: pointer
+  outline: none
